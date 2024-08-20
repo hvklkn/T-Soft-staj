@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .main-square {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+  }
+  
+  .tilde {
+    width: 240px;
+    height: 400px;
+  
+    svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+  }
+  
