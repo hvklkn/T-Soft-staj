@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.main-square {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.circle {
+    width: 310px;
+    height: 310px;
+    border: 40px solid orange;
+    border-radius: 50%;
+    position: absolute;
+    bottom:5px;
+    right: 5px;
+    background-color: transparent;
+}
+
+.circle::after {
+    content:"";
+    width: 170px;
+    height: 170px;
+    border: 40px solid orange;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: transparent;
+}
+
+.circle::before {
+    content:"";
+    width: 50px;
+    height: 50px;
+    border: 25px solid orange;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 105px;
+    right: 105px;
+    background-color: orange;
+}
