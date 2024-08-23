@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .box {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inconsolata", monospace;
+    font-size: 28px;
+    border: 1px solid #c39f76;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+  
+    --r0: , #c39f76 19px, #ffffff00 20px;
+    --r1: , white 30px, #ffffff00 31px;
+    --r2: , #c39f76 35px, #ffffff00 36px;
+  
+    background:
+      radial-gradient(circle at 142px 138px var(--r0)),
+      radial-gradient(circle at 61px 139px var(--r0)),
+      radial-gradient(circle at 218px 140px var(--r0)),
+      radial-gradient(circle at 101px 109px var(--r1)),
+      radial-gradient(circle at 179px 171px var(--r1)),
+      radial-gradient(ellipse at 177px 135px var(--r2)),
+      radial-gradient(ellipse at 102px 149px var(--r2));
+    
+    &:before, 
+    &:after {
+      content: '';
+      width: 118px;
+      height: 59px;
+      border-radius: 100%; 
+      color: #c39f76;
+    }
+  
+    &:before {
+      border-bottom: solid 30px;
+      margin: -11px -43px 0 0;  
+    }
+  
+    &:after {
+      width: 116px;
+      margin: 15px 0 0 4px;
+      border-top: solid 30px;
+    }
+  }
+  
