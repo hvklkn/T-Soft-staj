@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.box {
+	width:280px;
+	height:280px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family: "Inconsolata", monospace;
+	font-size: 28px;
+	border:1px solid #c39f76;
+	box-sizing:border-box;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    background-image: radial-gradient(#fff 5.5%, #000 5.5%);
+    background-size: 200% 200%;
+    animation: move-bg 2.8s linear infinite alternate;
+    }
+    
+    .box::before {
+        content: "Hello World";
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 18ch;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: #0000;
+        background-image: radial-gradient(#000 5.5%, #fff 5.5%);
+        background-size: 200% 200%;
+        animation: move-bg 2.8s linear infinite alternate;
+    }
+    
+    @keyframes move-bg {
+        from {
+            background-position: 25% 50%;
+        }
+        to {
+            background-position: 75% 50%;
+        }
+    }

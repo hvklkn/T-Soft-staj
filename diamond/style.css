@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.box {
+	width:280px;
+	height:280px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family: "Inconsolata", monospace;
+	font-size: 28px;
+	border:1px solid #c39f76;
+	box-sizing:border-box;
+    background-color: white;
+}
+.box:before, .box:after {
+content: '';
+position: absolute;
+}
+
+.box:before {
+top: 256.5px;
+padding: 27px 9ch;
+--c: , #0000 83.5%, #fff 84%;
+--d: 99%, #eabf8f 33.5deg, #0000 34deg, #0000 326deg, #eabf8f 326.5deg;
+background:
+linear-gradient(63deg var(--c)),
+linear-gradient(-63deg var(--c)),
+conic-gradient(at 34.2% var(--d)),
+conic-gradient(at 65.8% var(--d)),
+#c29f76;
+}
+
+.box:after {
+top: 310px;
+padding: 75px 9ch;
+--c: , #fff 34.3%, #0000 34.8%;
+background:
+linear-gradient(54deg var(--c)),
+linear-gradient(-54deg var(--c)),
+conic-gradient(from -15deg at 50% 102%,
+#d6b084 30deg, #eabf8f 0);
+}

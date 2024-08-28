@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.box {
+	width:280px;
+	height:280px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family: "Inconsolata", monospace;
+	font-size: 28px;
+	border:1px solid #c39f76;
+	box-sizing:border-box;
+    background-color: white;
+}
+
+.box::before{
+    content:"";
+    width:100px;
+    height:100px;
+    background-color:white;
+    box-shadow: 20px 20px 0px #BB9364,-20px -20px 0px #BB9364,-20px 20px 0px #BB9364,20px -20px 0px #BB9364
+    }
+    .box::after{
+    content:"";
+    position:absolute;
+    height:40px;
+    width:200px;
+    background:linear-gradient(90deg,transparent 50%,white 50%);
+    animation: rotate 2s infinite;
+    animation-timing-function:linear
+    }
+    
+    @keyframes rotate{
+    0%{
+    transform:rotate(0)
+    }
+    100%{
+    transform:rotate(360deg);
+    }
+    }
