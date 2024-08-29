@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /*dikeyde ortalar*/
+    align-items: center; /*yatayda ortalar*/
+    background-color: black;
+}
+
+.box {
+    overflow: hidden;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    --bg1: transparent 49.5%, #060 50%, transparent 50.5%;
+    --bg: 1;
+    --gr: darkgreen 5px, transparent 5px;
+    background:
+        radial-gradient(circle, #ffffff00 124px, #666 125px, #3a3a3a 133px, #fff 134px),
+        linear-gradient(45deg, var(--bg1)),
+        linear-gradient(-45deg, var(--bg1)),
+        repeating-radial-gradient(#ffffff00 16px, rgb(48, 99, 48) 17px, rgb(83, 160, 83) 18px, #ffffff00 19px, #ffffff00 33.7px),
+        radial-gradient(circle at center, #000 30px, #ffffff00 50px),
+        linear-gradient(90deg, var(--bg1)),
+        linear-gradient(180deg, var(--bg1)),
+        black;
+}
+
+.box:before,
+.box:after {
+    box-sizing: border-box;
+    content: "";  /* Pseudo-elementlerin içeriğini boş olarak ayarlar. */
+    height: 268px;
+    width: 268px;
+    border-radius: 50%;
+    position: absolute;  /*pseudo-elementlerini .box un içine konumlandırır */
+    top: 0;
+    left: 0;
+}
+
+.box:after {
+    background:none;
+
+    /* radarın içinde tespit edilen noktaları verip efekt vererek bunu gösterebiliriz bu kısımda */
+}
+
+.box:before {
+    top: 14px;
+    left: 14px;
+    height: 249px;
+    width: 249px;
+    background:
+        radial-gradient(circle, #8e8 1px, transparent 1px),
+        conic-gradient(#37cc1f03, #37cc1f80 45deg, #37cc1f80 55deg, #efe 60deg, black 62deg);
+    mix-blend-mode: screen;    /*Arka planın, .box öğesi ile etkileşime girmesini sağlar. */
+    animation: rte 4s infinite linear; /* 4 saniye döngüde, sonsuz kez ve sabit hızda uygular. */
+}
+
+@keyframes rte {
+    to {
+        transform: rotate(360deg); /*oluşturulan daire içerisinde 360 derece durmadan tarama yapıyor efekti verir*/
+    }
+}
