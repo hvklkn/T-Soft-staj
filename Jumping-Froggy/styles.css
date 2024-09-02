@@ -1,0 +1,361 @@
+
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.box {
+	width:280px;
+	height:280px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+	font-size: 28px;
+	border:1px solid #c39f76;
+	box-sizing:border-box;
+    position: relative;
+    text-align: center;
+    background-color: rgb(187, 237, 239);
+}
+
+.frogContainer{
+    transform: scale(0.9);
+}
+
+.boxSmall {
+    background-color: rgb(135, 1, 0);
+    width:280px;
+	height:140px;
+	display:flex;
+	bottom: 0;
+	box-sizing:border-box;
+    position: absolute;
+    text-align: center;
+    z-index: 0;
+}
+
+.footLayout {
+    position: absolute;
+    top: 250px;
+    width: 100px;
+    height: 40px;
+    z-index: 8;
+  
+}
+
+
+
+/* Kurbağa parçalarına zıplama animasyonu uygulama */
+.frogBackBlack,
+.belly,
+.footLayout {
+    animation: jump 2s infinite;
+}
+
+
+.frogHead {
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    background-color: #048702;
+    z-index: 5;
+    animation: head 2s infinite;
+
+}   
+
+.frogBack {
+    width: 85px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #048702;
+    top: 175px;
+    z-index: 3;
+    animation: back 2s infinite;
+}
+
+.frogBackBlack {
+    width: 87px;
+    height: 78px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    top: 175px;
+    z-index: 2;
+    animation: backBlack 2s infinite;
+}   
+
+
+
+
+
+.frogEyeBallLeft {
+    background-color: #048702;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 6;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frogEyeBallRight {
+    background-color: #048702;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 6;
+    top: -10px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frogInnerEye {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 7;
+}
+
+.BullsEye {
+    top: 8px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 8;
+}
+
+.frogEyeBall:nth-child(2) {
+    left: 380px;
+}
+
+.frogMouthGreen {
+    background-color: #048702;
+    width: 45px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 1;
+    left: -1px;
+    position: absolute;
+    top: -12px;
+}
+
+.frogMouthBlack {
+    position: absolute;
+    top: -3px; 
+    width: 43px;
+    left: 9px;
+    height: 50px;
+    background-color: black;
+    z-index: 0;
+    border-radius: 50%;
+    animation-name: mouth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+
+
+
+
+.frogRear {
+    top: 180px;
+    position: absolute;
+    width: 115px;
+    height: 70px;
+    background-color: #048702;
+    z-index: 1;
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation: rear 2s infinite;
+
+}
+
+.belly {
+    position: absolute;
+    width: 70px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #9cfd9d;
+    top: 175px;
+    z-index: 4;
+}
+
+.foot-container {
+    width: 2px;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 100px solid transparent;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+}
+
+.start {
+    top: -5px;
+    left: -40px;
+    transform: rotate(5deg) translateX(1px);
+}
+
+.end {
+    top: -5px;
+    right: -20px;
+    transform: rotate(-5deg) translateX(1px);
+}
+
+.foot-container:nth-child(2) {
+    left: -15px;
+    animation: jumpFoot 2s infinite;
+}
+
+.foot-container:nth-child(3) {
+    left: 15px;
+    animation: jumpFoot2 2s infinite;  
+}
+
+.finger {
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 30px solid #048702;
+}
+
+.finger:first-child {
+    border-left: 1px solid transparent;
+    transform: rotate(18deg) translateY(-2px) translateX(2px);
+}
+
+.finger:nth-child(2) {
+    transform: rotate(5deg) translateY(-2px) translateX(1px);
+}
+
+.finger:nth-child(3) {
+    transform: rotate(-5deg) translateY(-2px);
+}
+
+.finger:last-child {
+    border-right: 1px solid transparent;
+    transform: rotate(-18deg) translateY(-2px) translateX(-1px);
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: translateY(-80px); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes mouth{
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: scaleY(0.8) scaleX(1.1); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes head{
+    0% {
+        transform: translateY(5px) scaleY(0.8) scaleX(1.2);
+    }
+    50% {
+        transform: translateY(-80px) scaleY(1) scaleX(1); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    100% {
+        transform: translateY(5px) scaleY(0.8) scaleX(1.2);
+    }
+}
+
+@keyframes back{
+    0% {
+        transform: translateY(5px) scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: translateY(-80px) scaleY(0.8) scaleX(1.1); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    100% {
+        transform: translateY(5px) scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes backBlack{
+    0% {
+        transform: translateY(5px) scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: translateY(-80px) scaleY(0.8) scaleX(1.1); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    100% {
+        transform: translateY(5px) scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes rear{
+    0% {
+        transform: translateY(-2px) scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: translateY(-80px) scaleY(0.9) scaleX(1); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    
+    100% {
+        transform: translateY(5px) scaleY(0.8) scaleX(1.3);
+    }
+}
+
+
+
+@keyframes jumpFoot {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+    }
+
+
+@keyframes jumpFoot2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px); /* Zıplama yüksekliğini buradan ayarlayabilirsiniz */
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+    }
+
+
