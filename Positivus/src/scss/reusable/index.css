@@ -1,0 +1,67 @@
+.button__standart {
+  padding: 2rem;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  transition: 0.5s all ease;
+  display: inline;
+  width: 200px;
+}
+.button__standart--white:hover {
+  background-color: black;
+  color: white;
+}
+.button__standart--black {
+  background-color: black;
+  color: white;
+}
+.button__standart--black:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  max-width: 1220px;
+  margin-inline: auto;
+  padding: 2rem;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.colored-text {
+  background-color: #b9ff66;
+  color: black;
+  padding: 0.1rem 0.6rem;
+  border-radius: 1rem;
+}
+
+.colored-text-2 {
+  background-color: white;
+  color: black;
+  padding: 0.1rem 0.6rem;
+  border-radius: 1rem;
+}
+
+.section__header {
+  margin-block: 4rem 3rem;
+  max-width: 850px;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.section__header h2 {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+@media (max-width: 720px) {
+  .section__header {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=index.css.map */

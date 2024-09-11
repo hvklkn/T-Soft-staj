@@ -1,0 +1,22 @@
+.button__standart {
+  padding: 2rem;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  transition: 0.5s all ease;
+  display: inline;
+  width: 200px;
+  &--white {
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  &--black {
+    background-color: black;
+    color: white;
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+}

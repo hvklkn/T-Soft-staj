@@ -1,0 +1,42 @@
+@use "../abstracts/breakpoints";
+
+.hero {
+  margin-block: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoints.lg {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  &__left {
+    @include breakpoints.lg {
+      text-align: center;
+      gap: 2rem;
+      align-items: center;
+      max-width: 600px;
+    }
+
+    text-align: left;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    button {
+      margin-top: 3rem;
+      width: 250px;
+    }
+
+    justify-content: center;
+  }
+}
+
+.img {
+  max-width: 600px;
+
+  @include breakpoints.md {
+    width: 300px;
+  }
+}
