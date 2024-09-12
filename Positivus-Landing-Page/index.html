@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Positivus</title>
+</head>
+<body>
+    <div class="preloader show">
+        <svg viewBox="0 0 37 36" id="star">
+            <path d="M18.5357 5.53472L36.1368 0.349121L31.0011 18.0001L36.1368 35.6012L18.5357 30.4655L0.884766 35.6012L6.07036 18.0001L0.884766 0.349121L18.5357 5.53472Z" stroke-miterlimit="10"></path>
+        </svg>
+    </div>
+    <style>
+        .preloader{display: flex; align-items: center; justify-content: center; width: 100%; height: 100vh; background-color: #fff; position: fixed; top: 0; left: 0; z-index: 3; transition: 1s; transition-delay: 1s;}
+        .preloader.hide{transform: translateY(-150%);}
+        .preloader svg{width: 100px; height: 100px; animation: preloader 5s infinite linear;}
+        @keyframes preloader{
+            0%{transform: rotate(0deg); fill: #000;}
+            50%{transform: rotate(180deg); fill: #B9FF66;}
+            100%{transform: rotate(360deg); fill: #000;}
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.querySelector('.preloader').classList.add("hide");s
+        };
+    </script>
+    <main>
+        <header>
+            <div class="wrapper flex aic jcsb">
+                <a href="#home" class="flex logo-div">
+                    <svg class="logo-star"><use xlink:href="img/sprite.svg#star"></use></svg>
+                    <div class="mask-div">
+                        <svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg>
+                    </div>
+                </a>
+                <nav>
+                    <ul class="flex nav">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#cases">Use Cases</a></li>
+                        <li><a href="">Request a quote</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger flex aic jcc">
+                    <svg class="cancel"><use xlink:href="img/sprite.svg#cancel"></use></svg>
+                    <svg class="hamburger show"><use xlink:href="img/sprite.svg#hamburger"></use></svg>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </header>
+        <section class="s1" id="home">
+            <div class="wrapper flex jcsb">
+                <div class="left">
+                    <h1 class="anim fade-up">Navigating the digital landscape for success</h1>
+                    <p class="anim fade-left">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+                    <a href="#contact" class="anim fade-down">Book a consultation</a>
+                </div>
+                <div class="right anim fade-out">
+                    <div class="ellipse el1"></div>
+                    <div class="ellipse el2"></div>
+                    <div class="ellipse el3"></div>
+                    <div class="megafon-div">
+                        <svg class="megafon"><use xlink:href="img/sprite.svg#megafon"></use></svg>
+                    </div>
+                    <div class="black-circle"></div>
+                    <div class="green-circle green-circle1"></div>
+                    <div class="heart-circle flex aic jcc">
+                        <svg class="heart"><use xlink:href="img/sprite.svg#heart"></use></svg>
+                    </div>
+                    <div class="share-circle flex aic jcc"><span class="share">&lt;</span></div>
+                    <div class="triangle-circle flex aic jcc"><span class="triangle"></span></div>
+                    <div class="locate-circle flex aic jcc"><span class="locate"></span></div>
+                    <svg class="star1"><use xlink:href="img/sprite.svg#star"></use></svg>
+                    <svg class="star2"><use xlink:href="img/sprite.svg#star"></use></svg>
+                    <div class="green-circle green-circle2"></div>
+                </div>
+            </div>
+        </section>
+        <section class="s2 scroll fade-out">
+            <div class="wrapper flex aic jcsb fww">
+                <img src="img/sponsor.png" alt="Amazon logo">
+                <img src="img/sponsor2.png" alt="Dribbble logo">
+                <img src="img/sponsor3.png" alt="HubSpot logo">
+                <img src="img/sponsor4.png" alt="Notion logo">
+                <img src="img/sponsor5.png" alt="Netflix logo">
+                <img src="img/sponsor6.png" alt="Zoom logo">
+            </div>
+        </section>
+        <section class="s3" id="services">
+            <div class="wrapper">
+                <div class="flex heading">
+                    <h2 class="scroll fade-up">Services</h2>
+                    <p class="subtitle scroll fade-up">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+                </div>
+                <div class="services flex fww jcsb">
+                    <div class="service flex jcsb aic service-light scroll fade-left">
+                        <div class="left">
+                            <p class="title">Search engine</p>
+                            <p class="title">optimization</p>
+                            <a href="" class="flex aic">
+                                <span class="flex aic jcc">
+                                    <svg class="arrow arrow1"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                    <svg class="arrow arrow2"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                </span>
+                                Learn more
+                            </a>
+                        </div>
+                        <svg class="img"><use xlink:href="img/sprite.svg#service1"></use></svg>
+                    </div>
+                    <div class="service flex jcsb aic service-green scroll fade-right">
+                        <div class="left">
+                            <p class="title">Pay-per-click</p>
+                            <p class="title">advertising</p>
+                            <a href="" class="flex aic">
+                                <span class="flex aic jcc">
+                                    <svg class="arrow arrow1"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                    <svg class="arrow arrow2"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                </span>
+                                Learn more
+                            </a>
+                        </div>
+                        <svg class="img"><use xlink:href="img/sprite.svg#service2"></use></svg>
+                    </div>
+                    <div class="service flex jcsb aic service-dark scroll fade-left">
+                        <div class="left">
+                            <p class="title">Social Media</p>
+                            <p class="title">Marketing</p>
+                            <a href="" class="flex aic">
+                                <span class="flex aic jcc">
+                                    <svg class="arrow arrow1"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                    <svg class="arrow arrow2"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                </span>
+                                Learn more
+                            </a>
+                        </div>
+                        <svg class="img"><use xlink:href="img/sprite.svg#service3"></use></svg>
+                    </div>
+                    <div class="service flex jcsb aic service-light scroll fade-right">
+                        <div class="left">
+                            <p class="title">Email</p>
+                            <p class="title">Marketing</p>
+                            <a href="" class="flex aic">
+                                <span class="flex aic jcc">
+                                    <svg class="arrow arrow1"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                    <svg class="arrow arrow2"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                </span>
+                                Learn more
+                            </a>
+                        </div>
+                        <svg class="img"><use xlink:href="img/sprite.svg#service4"></use></svg>
+                    </div>
+                    <div class="service flex jcsb aic service-green scroll fade-left">
+                        <div class="left">
+                            <p class="title">Content</p>
+                            <p class="title">Creation</p>
+                            <a href="" class="flex aic">
+                                <span class="flex aic jcc">
+                                    <svg class="arrow arrow1"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                    <svg class="arrow arrow2"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                </span>
+                                Learn more
+                            </a>
+                        </div>
+                        <svg class="img"><use xlink:href="img/sprite.svg#service5"></use></svg>
+                    </div>
+                    <div class="service flex jcsb aic service-dark scroll fade-right">
+                        <div class="left">
+                            <p class="title">Analytics and</p>
+                            <p class="title">Tracking</p>
+                            <a href="" class="flex aic">
+                                <span class="flex aic jcc">
+                                    <svg class="arrow arrow1"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                    <svg class="arrow arrow2"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                </span>
+                                Learn more
+                            </a>
+                        </div>
+                        <svg class="img"><use xlink:href="img/sprite.svg#service6"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="wrapper">
+                <div class="content flex jcsb aic">
+                    <div class="left scroll fade-right">
+                        <p class="title">Let’s make things happen</p>
+                        <p class="text">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+                        <a href="#contact">Get your free proposal</a>
+                    </div>
+                    <div class="right scroll fade-left">
+                        <svg class="big-star"><use xlink:href="img/sprite.svg#big-star"></use></svg>
+                        <svg class="middle-star"><use xlink:href="img/sprite.svg#middle-star"></use></svg>
+                        <svg class="star"><use xlink:href="img/sprite.svg#star"></use></svg>
+                        <svg class="ellipse el1"><use xlink:href="img/sprite.svg#ellipse"></use></svg>
+                        <svg class="ellipse el2"><use xlink:href="img/sprite.svg#ellipse"></use></svg>
+                        <svg class="ellipse el3"><use xlink:href="img/sprite.svg#ellipse"></use></svg>
+                        <div class="head">
+                            <span class="eye eye1"></span>
+                            <span class="eye eye2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5" id="cases">
+            <div class="wrapper">
+                <div class="flex heading">
+                    <h2 class="scroll fade-up">Case Studies</h2>
+                    <p class="subtitle scroll fade-up">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+                </div>
+                <div class="studies">
+                    <div class="study scroll fade-up">
+                        <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                        <a href="" class="flex aic">Learn more
+                            <svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                        </a>
+                    </div>
+                    <div class="study scroll fade-up">
+                        <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                        <a href="" class="flex aic">Learn more
+                            <svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                        </a>
+                    </div>
+                    <div class="study scroll fade-up">
+                        <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                        <a href="" class="flex aic">Learn more
+                            <svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="wrapper">
+                <div class="flex heading">
+                    <h2 class="scroll fade-up">Our Working Process </h2>
+                    <p class="subtitle scroll fade-up">Step-by-Step Guide to Achieving <br>Your Business Goals</p>
+                </div>
+                <div class="processes">
+                    <div class="process scroll fade-up">
+                        <div class="main flex aic jcsb">
+                            <div class="left flex aic">
+                                <p class="num">01</p>
+                                <p class="title">Consultation</p>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="line"></div>
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
+                    </div>
+                    <div class="process scroll fade-up">
+                        <div class="main flex aic jcsb">
+                            <div class="left flex aic">
+                                <p class="num">02</p>
+                                <p class="title">Research and Strategy Development</p>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="line"></div>
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
+                    </div>
+                    <div class="process scroll fade-up">
+                        <div class="main flex aic jcsb">
+                            <div class="left flex aic">
+                                <p class="num">03</p>
+                                <p class="title">Implementation</p>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="line"></div>
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
+                    </div>
+                    <div class="process scroll fade-up">
+                        <div class="main flex aic jcsb">
+                            <div class="left flex aic">
+                                <p class="num">04</p>
+                                <p class="title">Monitoring and Optimization</p>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="line"></div>
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
+                    </div>
+                    <div class="process scroll fade-up">
+                        <div class="main flex aic jcsb">
+                            <div class="left flex aic">
+                                <p class="num">05</p>
+                                <p class="title">Reporting and Communication</p>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="line"></div>
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
+                    </div>
+                    <div class="process scroll fade-up">
+                        <div class="main flex aic jcsb">
+                            <div class="left flex aic">
+                                <p class="num">06</p>
+                                <p class="title">Continual Improvement</p>
+                            </div>
+                            <div class="btn">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="line"></div>
+                            <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s7">
+            <div class="wrapper">
+                <div class="flex heading">
+                    <h2 class="scroll fade-up">Team</h2>
+                    <p class="subtitle scroll fade-up">Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+                </div>
+                <div class="teams flex fww jcsb">
+                    <div class="team scroll fade-up">
+                        <div class="flex aife top">
+                            <a class="in flex aic jcc">in</a>
+                            <div class="img-div">
+                                <svg class="mask"><use xlink:href="img/sprite.svg#mask"></use></svg>                           
+                                <img src="img/team.png" alt="">
+                            </div>
+                            <div>
+                                <p class="name">John Smith</p>
+                                <p class="position">CEO and Founder</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <p class="text">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                    </div>
+                    <div class="team scroll fade-down">
+                        <div class="flex aife top">
+                            <a class="in flex aic jcc">in</a>
+                            <div class="img-div">
+                                <svg class="mask"><use xlink:href="img/sprite.svg#mask"></use></svg>                               
+                                <img src="img/team2.png" alt="">
+                            </div>
+                            <div>
+                                <p class="name">Jane Doe</p>
+                                <p class="position">Director of Operations</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <p class="text">7+ years of experience in project management and team leadership. Strong organizational and communication skills</p>
+                    </div>
+                    <div class="team scroll fade-up">
+                        <div class="flex aife top">
+                            <a class="in flex aic jcc">in</a>
+                            <div class="img-div">
+                                <svg class="mask"><use xlink:href="img/sprite.svg#mask"></use></svg>                               
+                                <img src="img/team3.png" alt="">
+                            </div>
+                            <div>
+                                <p class="name">Michael Brown</p>
+                                <p class="position">Senior SEO Specialist</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <p class="text">5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization</p>
+                    </div>
+                    <div class="team scroll fade-down">
+                        <div class="flex aife top">
+                            <a class="in flex aic jcc">in</a>
+                            <div class="img-div">
+                                <svg class="mask"><use xlink:href="img/sprite.svg#mask"></use></svg>                              
+                                <img src="img/team4.png" alt="">
+                            </div>
+                            <div>
+                                <p class="name">Emily Johnson</p>
+                                <p class="position">PPC Manager</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <p class="text">3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis</p>
+                    </div>
+                    <div class="team scroll fade-up">
+                        <div class="flex aife top">
+                            <a class="in flex aic jcc">in</a>
+                            <div class="img-div">
+                                <svg class="mask"><use xlink:href="img/sprite.svg#mask"></use></svg>                             
+                                <img src="img/team5.png" alt="">
+                            </div>
+                            <div>
+                                <p class="name">Brian Williams</p>
+                                <p class="position">Social Media Specialist</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <p class="text">4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement</p>
+                    </div>
+                    <div class="team scroll fade-down">
+                        <div class="flex aife top">
+                            <a class="in flex aic jcc">in</a>
+                            <div class="img-div">
+                                <svg class="mask"><use xlink:href="img/sprite.svg#mask"></use></svg>                             
+                                <img src="img/team6.png" alt="">
+                            </div>
+                            <div>
+                                <p class="name">Sarah Kim</p>
+                                <p class="position">Content Creator</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <p class="text">2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s8">
+            <div class="wrapper">
+                <div class="flex heading">
+                    <h2 class="scroll fade-up">Testimonials</h2>
+                    <p class="subtitle scroll fade-up">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
+                </div>
+                <div class="content scroll fade-out">
+                    <div class="testimonials owl-carousel">
+                        <div class="testimonial">
+                            <p class="text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                            <p class="author">John Smith</p>
+                            <p class="position">Marketing Director at XYZ Corp</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</div>
+                            <p class="author">Jane Doe</p>
+                            <p class="position">Director of Operations</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</div>
+                            <p class="author">Michael Brown</p>
+                            <p class="position">Senior SEO Specialist</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</div>
+                            <p class="author">Emily Johnson</p>
+                            <p class="position">PPC Manager</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</div>
+                            <p class="author">Brian Williams</p>
+                            <p class="position">Social Media Specialist</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</div>
+                            <p class="author">Sarah Kim</p>
+                            <p class="position">Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s9" id="contact">
+            <div class="wrapper">
+                <div class="flex heading">
+                    <h2 class="scroll fade-up">Contact Us</h2>
+                    <p class="subtitle scroll fade-up">Connect with Us: Let's Discuss Your<br> Digital Marketing Needs</p>
+                </div>
+                <div class="form-div flex jcsb">
+                    <form action="" class="scroll fade-left">
+                        <p>Name</p>
+                        <input type="text">
+                        <p>Email*</p>
+                        <input type="email">
+                        <p>Message*</p>
+                        
+                        <input type="submit" value="Send Message">
+                    </form>
+                    <div class="right scroll fade-right">
+                        <svg class="star1"><use xlink:href="img/sprite.svg#star"></use></svg>
+                        <svg class="star2"><use xlink:href="img/sprite.svg#star"></use></svg>
+                        <svg class="star3"><use xlink:href="img/sprite.svg#mega-star"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="content">
+                    <div class="top flex aic jcsb scroll fade-up">
+                        <a href="#home" class="flex aic logo-div">
+                            <svg class="logo-star"><use xlink:href="img/sprite.svg#star"></use></svg>
+                            <svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg>
+                        </a>
+                        <nav>
+                            <ul class="flex">
+                                <li><a href="">About us</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#cases">Use Cases</a></li>
+                            </ul>
+                        </nav>
+                        <div class="socials flex">
+                            <a class="social flex aic jcc">
+                                <svg class="linkedin"><use xlink:href="img/sprite.svg#linkedin"></use></svg>
+                            </a>
+                            <a class="social flex aic jcc">
+                                <svg class="facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+                            </a>
+                            <a class="social flex aic jcc">
+                                <svg class="twitter"><use xlink:href="img/sprite.svg#twitter"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts flex jcsb aifs">
+                        <div class="left">
+                            <p class="title">Contact us:</p>
+                            <p>Email: info@positivus.com</p>
+                            <p>Phone: 555-567-8901</p>
+                            <p>Address: 1234 Main St <br>Moonstone City, Stardust State 12345</p>
+                        </div>
+                        <div class="right">
+                            <form action="" class="flex">
+                                <input type="email" placeholder="Email">
+                                <input type="submit" value="Subscribe to news">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="copyright flex">
+                        <p>© 2023 Positivus. All Rights Reserved.</p>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
