@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAZIMTOK</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">KAZIMTOK</div>
+      
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Hakkımda</a></li>
+          <li><a href="#experience">Deneyimlerim</a></li>
+          <li><a href="#projects">Randevu</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">KAZIMTOK</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Hakkında</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Deneyimleri</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Randevu</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">İletişim</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/assets/image3.png" alt="KAZIMTOK profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Merhaba, ben</p>
+        <h1 class="title">KAZIM TOK</h1>
+        <p class="section__text__p2">Bay-Bayan Kuaförünüz</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://www.kolayrandevu.com/isletme/kazim-tok-bay-bayan-kuafor?website=1')"
+          >
+            Randevu
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='tel:+905385265052'">
+            İletişim
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Daha Fazla Tanıyın</p>
+      <h1 class="title">Hakkımda</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/image1.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Deneyimlerim</h3>
+              <p><h4>Kazım Tok Bay-Bayan Kuaförü</h4><br />Müşteri memnuniyetini ön planda tutarak, modern saç kesimleri, sakal bakımı ve özel stil danışmanlığı yaptım.</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Eğitimlerim</h3>
+              <p><h4>Erkek Kuaförlüğü Eğitimi<h4></h4><br />Saç kesimi, sakal bakımı, renk teknikleri ve stil oluşturma konularında kapsamlı bir eğitim aldım.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Merhaba, ben Kazım TOK, 10 yıllık deneyime sahip bir erkek kuaförüyüm. Mesleğe olan tutkum, her müşterimin tarzını ve kişiliğini yansıtan özgün kesimler ve stiller yaratmamı sağlıyor. Saç ve sakal tasarımında yenilikçi teknikler kullanarak, size en iyi hizmeti sunmayı hedefliyorum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Keşfet</p>
+      <h1 class="title">Deneyimlerim</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Kendi İşletmem - Kazım TOK Bay Bayan Kuaför (Yıl-Yıl)</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>----</h3>
+                  <p>-----</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>------</h3>
+                  <p>-------</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>-----</h3>
+                  <p>------</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>----</h3>
+                  <p>------</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>------</h3>
+                  <p>-----</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>----</h3>
+                  <p>----</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Hadi Sende Bizimle Bu Deneyimi Yaşa!!</p>
+      <h1 class="title"> Yerinizi Şimdiden Ayırtın</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            
+                <button class="btn btn-color-1" onclick="location.href='https://www.kolayrandevu.com/isletme/kazim-tok-bay-bayan-kuafor?website=1'">
+                    Randevu Al
+                </button>      
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Bizimle İletişime Geçin</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/wa.png"
+            alt="Wa icon"
+            class="icon contact-icon"
+          />
+          <button class="btn btn-color-1" onclick="location.href='https://wa.me/905385265052?text=Merhaba,%20size%20ulaşmak%20istiyorum!'">Whatsapp ile bize ulaşın</button>>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#experience">Deneyimlerim</a></li>
+            <li><a href="#projects">Randevu</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
